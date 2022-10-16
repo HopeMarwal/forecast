@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/forecast/static/css/main.ec241ad4.css",
+    "main.js": "/forecast/static/js/main.92a80bb9.js",
+    "static/media/cloud_n.jpeg": "/forecast/static/media/cloud_n.367e31bd766a38b4ee7f.jpeg",
+    "static/media/thunder_d.jpeg": "/forecast/static/media/thunder_d.3d5428972559dd7241eb.jpeg",
+    "static/media/snow_d.jpeg": "/forecast/static/media/snow_d.76b4aec5a36b089325a9.jpeg",
+    "static/media/clear_n.jpeg": "/forecast/static/media/clear_n.6e8f5f0dca96c81afcc0.jpeg",
+    "static/media/rain_d.jpeg": "/forecast/static/media/rain_d.9b5a94c1cef0ed214f99.jpeg",
+    "static/media/thunder_n.jpeg": "/forecast/static/media/thunder_n.8c535f440d5b447a863c.jpeg",
+    "static/media/snow_n.jpeg": "/forecast/static/media/snow_n.0277d876b26cf0894b49.jpeg",
+    "static/media/cold_bg.jpeg": "/forecast/static/media/cold_bg.27627c79a10510b2f213.jpeg",
+    "static/media/warm_bg.jpeg": "/forecast/static/media/warm_bg.4a0805755e197e3d6149.jpeg",
+    "static/media/rain_n.jpeg": "/forecast/static/media/rain_n.13f95e8415b83e09c979.jpeg",
+    "static/media/cloud_d.jpeg": "/forecast/static/media/cloud_d.baba48550dc66dd01c7b.jpeg",
+    "index.html": "/forecast/index.html",
+    "main.ec241ad4.css.map": "/forecast/static/css/main.ec241ad4.css.map",
+    "main.92a80bb9.js.map": "/forecast/static/js/main.92a80bb9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ec241ad4.css",
+    "static/js/main.92a80bb9.js"
+  ]
+}
