@@ -1,0 +1,221 @@
+.weather {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 30px;
+  background-image: url('../img/cold_bg.jpeg');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  transition: all 0.4s ease-out;
+
+  &.day {
+    &.clear {
+      background-image: url('../img/warm_bg.jpeg');
+    }
+
+    &.rain {
+      background-image: url('../img/rain_d.jpeg');
+    }
+
+    &.thunder {
+      background-image: url('../img/thunder_d.jpeg');
+    }
+
+    &.snow {
+      background-image: url('../img/snow_d.jpeg');
+    }
+
+    &.clouds {
+      background-image: url('../img/cloud_d.jpeg');
+    }
+  }
+
+  &.night {
+    &.clear {
+      background-image: url('../img/clear_n.jpeg');
+    }
+
+    &.rain {
+      background-image: url('../img/rain_n.jpeg');
+    }
+
+    &.thunder {
+      background-image: url('../img/thunder_n.jpeg');
+    }
+
+    &.snow {
+      background-image: url('../img/snow_n.jpeg');
+    }
+
+    &.clouds {
+      background-image: url('../img/cloud_n.jpeg');
+    }
+  }
+
+  main {
+    padding: 25px;
+    min-height: 780px;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
+  }
+
+  .search {
+    &-bar {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      appearance: none;
+      background: none;
+      margin-top: -25px;
+      border: none;
+      outline: none;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 0 0 16px 16px;
+      box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+      color: #313131;
+      font-size: 20px;
+      transition: 0.4s ease;
+
+      &:focus {
+        background-color: rgba(255, 255, 255, 0.75);
+      }
+    }
+  }
+
+  .error-box {
+    margin-top: 5px;
+    font-size: 14px;
+    color: rgb(206, 1, 1);
+    transition: all 0.3s linear;
+  }
+
+  .location-box {
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .location-country {
+      width: 100%;
+      color: #fff;
+      font-size: 18px;
+    }
+
+    .location {
+      display: inline-block;
+      color: #fff;
+      font-size: 32px;
+      font-weight: 500;
+      text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+    }
+
+    .date {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 300;
+      font-style: italic;
+      text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+    }
+  }
+
+  .weather-box {
+    .temp {
+      position: relative;
+      display: inline-block;
+      margin: 30px auto;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 16px;
+      padding: 15px 25px;
+      color: #fff;
+      font-size: 80px;
+      text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+      box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+      ;
+    }
+
+    .desc {
+      color: #fff;
+      font-size: 40px;
+      font-weight: 700;
+      text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+    }
+  }
+
+  .btn-box {
+    margin-top: 20px;
+
+    .btn {
+      cursor: pointer;
+      padding: 10px 15px;
+      font-size: 16px;
+      border: none;
+      background: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      border-radius: 5px;
+      font-weight: 500;
+      transform: scale(1);
+      transition: all 0.2s ease;
+
+      &:active {
+        transform: scale(1.08);
+      }
+    }
+  }
+
+  .forecast-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    transition: all 0.4s ease-out;
+  }
+
+  .forecast-card {
+    color: #fff;
+    padding: 3px;
+    width: 20%;
+    opacity: 0;
+    transition: all 0.5s linear;
+
+    &.visible {
+      opacity: 1;
+    }
+
+    &_box {
+      border-radius: 5px;
+      padding: 10px 5px 5px 5px;
+
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .date-box {
+      margin-bottom: 15px;
+    }
+
+    .day {
+      color: #ccc;
+    }
+
+    .date {
+      margin-top: -2px;
+      font-size: 12px;
+      color: rgb(202, 200, 216);
+    }
+
+    .weather_day {
+      margin-bottom: 30px;
+      margin-top: -10px;
+    }
+
+    .weather_night {
+      margin-bottom: -10px;
+    }
+
+    .weather_day,
+    .weather_night {
+      font-size: 14px;
+    }
+  }
+}
